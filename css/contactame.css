@@ -1,0 +1,292 @@
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#formbutton-shim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#formbutton-modalContainer {
+  position: fixed;
+  width: 320px;
+  right: 22px;
+  bottom: 104px;
+  transform: translate(0, 5%);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  cursor: default;
+}
+
+@media(max-width: 480px) {
+  #formbutton-modalContainer {
+    width: 276px;
+  }
+}
+
+@media (max-width: 375px) {
+  #formbutton-modalContainer {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+}
+
+#formbutton-modalContainer.visible {
+  transform: translate(0, 0);
+}
+
+#formbutton-modal {
+  background: #F9F9F8;
+  border-radius: 12px;
+  box-shadow: 5px 5px 22px rgba(22, 22, 22, 0.2);
+  line-height: 1.2;
+  overflow: auto;
+  max-height: 100vh;
+}
+
+#formbutton-title {
+  padding: 22px 22px;
+  background: #c4001a;
+  border-radius: 12px 12px 0 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#formbutton-title.has-description {
+  padding: 33px 22px;
+}
+
+#formbutton-title.empty {
+  justify-content: flex-end;
+}
+
+@media(min-width: 375px) {
+  #formbutton-title.empty {
+    display: none;
+  }
+}
+
+#formbutton-title i {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  font-style: normal;
+}
+
+#formbutton-closeButton {
+  margin-left: auto;
+  color: transparent;
+  background: transparent;
+  border: none;
+  text-shadow:
+    0 0 0 white,
+    -1px -1px 0 rgba(0, 0, 0, 0.2),
+    1px -1px 0 rgba(0, 0, 0, 0.2),
+    -1px 1px 0 rgba(0, 0, 0, 0.2),
+    1px 1px 0 rgba(0, 0, 0, 0.2);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#formbutton-closeButton::after {
+  content: "❌"
+}
+
+#formbutton-description {
+  margin: -0.75rem 22px 0;
+  padding: 1rem 1rem;
+  background: rgb(254, 254, 254);
+  box-shadow: 0 1px 3px rgba(22, 22, 22, 0.2);
+  border-radius: 3px;
+}
+
+#formbutton-body {
+  padding: 22px;
+}
+
+#formbutton-formContainer {
+  position: relative;
+}
+
+#formbutton-formStatus {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  background: #F9F9F8;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+
+#formbutton-formStatus a.hover-gray {
+  padding: 8px 16px;
+  border-radius: 15px;
+  transition: all 75ms ease 0s;
+}
+
+#formbutton-formStatus a.hover-gray:hover {
+  background: rgb(242, 242, 242);
+}
+
+#formbutton-form .field {
+  white-space: nowrap;
+}
+
+#formbutton-form .field:not(:first-child) {
+  padding-top: 22px;
+}
+
+#formbutton-form .field.radioField,
+#formbutton-form .field.checkboxField {
+  padding-left: 1px;
+}
+
+#formbutton-form .field.radioField {
+  padding-top: 6px;
+}
+
+#formbutton-form label {
+  display: inline-block;
+  white-space: normal;
+}
+
+#formbutton-form .field>label:first-child {
+  margin-bottom: 6px;
+}
+
+#formbutton-form input,
+#formbutton-form select,
+#formbutton-form textarea,
+#formbutton-form button,
+#formbutton-form #card-element {
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  background: rgb(254, 254, 254);
+}
+
+#formbutton-form input:not([type="submit"]):not([type="reset"]),
+#formbutton-form select,
+#formbutton-form textarea,
+#formbutton-form #card-element {
+  padding: 0.75rem 1rem;
+}
+
+#formbutton-form input:not([type="submit"]):not([type="reset"])::placeholder,
+#formbutton-form select::placeholder,
+#formbutton-form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4)
+}
+
+#formbutton-form input:focus:not([type="radio"]):not([type="checkbox"]),
+#formbutton-form select:focus,
+#formbutton-form textarea:focus {
+  background: white;
+}
+
+#formbutton-form textarea {
+  min-height: 6rem;
+}
+
+#formbutton-form button,
+#formbutton-form [type="submit"],
+#formbutton-form [type="reset"] {
+  padding: 0.65rem 0.75rem 0.6rem;
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+#formbutton-form button:hover,
+#formbutton-form [type="submit"]:hover,
+#formbutton-form [type="reset"]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#formbutton-form select {
+  text-transform: none;
+}
+
+#formbutton-form [type="checkbox"],
+#formbutton-form [type="radio"] {
+  width: auto;
+  margin: 0 0.5em 0 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#formbutton-form [type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+#formbutton-form [type="radio"] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+#formbutton-modal input:focus,
+#formbutton-modal select:focus,
+#formbutton-modal textarea:focus,
+#formbutton-modal button:focus,
+#formbutton-modal [type="submit"]:focus,
+#formbutton-modal [type="reset"]:focus {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+#formbutton-modal input::-moz-focus-inner,
+#formbutton-modal select::-moz-focus-inner,
+#formbutton-modal textarea::-moz-focus-inner,
+#formbutton-modal button::-moz-focus-inner,
+#formbutton-modal [type="submit"]::-moz-focus-inner,
+#formbutton-modal [type="reset"]::-moz-focus-inner {
+  outline: 1px dotted #212121;
+}
+
+#formbutton-modal.no-outline input:focus,
+#formbutton-modal.no-outline select:focus,
+#formbutton-modal.no-outline textarea:focus,
+#formbutton-modal.no-outline button:focus,
+#formbutton-modal.no-outline [type="submit"]:focus,
+#formbutton-modal.no-outline [type="reset"]:focus {
+  outline: none;
+}
