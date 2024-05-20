@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- shrink-to-fit=no -->
   <meta name="description" content="Mi porfolio personal para clase y el entorno laboral" />
   <meta name="author" content="Tomás Moroño Souto" />
+  <meta property="og:image" content="social-profile-edit-cropped.png">
   <title>Tomás Moroño</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
@@ -13,10 +14,9 @@
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
   <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 
   <!-- Bootstrap -->
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/modals/">
@@ -188,35 +188,37 @@
         </ul>
       </div>
     </section>
-  </div>
+    <hr class="m-0" />
 
-  <!-- Contáctame -->
-  <section class="resume-section" id="contact">
-    <div class="resume-section-content">
+    <!-- Contáctame -->
+    <section class="resume-section" id="contact">
+      <div class="resume-section-content">
 
-      <div class="my-5 p-3">
-        <div class="p-5 pb-4">
-          <h1 class="fw-bold mb-3 fs-2">Contáctame</h1>
-        </div>
-        <div class="px-5 pt-0">
-          <form class="form-floating" action="https://formspree.io/f/xeqywqln" id="xeqywqln" method="POST">
-            <div class="form-floating mb-3">
-              <input type="email" name="email" class="form-control rounded-3" id="email">
-              <label for="email">Correo electrónico</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control rounded-3" name="message" id="message" rows="5"></textarea>
-              <label for="message">Tu mensaje</label>
-            </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Enviar</button>
-          </form>
+        <div class="my-5 p-3">
+          <h2 class="my-4">Contáctame</h2>
+          <div class="px-4">
+            <form class="form-floating" action="https://formspree.io/f/xeqywqln" id="xeqywqln" method="POST">
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control rounded-3" id="email">
+                <label for="email">Correo electrónico</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control rounded-3" name="message" id="message" rows="7"></textarea>
+                <label for="message">Tu mensaje</label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
+    </section>
+  </div>
 
-      <!-- Bootstrap JS -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <!-- JS -->
-      <script src="js/scripts.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS -->
+  <script src="js/scripts.js"></script>
 
 </body>
 
