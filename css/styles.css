@@ -12623,7 +12623,7 @@ body {
   }
 }
 
-h1,
+/* h1,
 .h1,
 h2,
 .h2,
@@ -12636,7 +12636,7 @@ h5,
 h6,
 .h6 {
   text-transform: uppercase;
-}
+} */
 
 h1,
 .h1 {
@@ -12650,7 +12650,7 @@ h1,
 
 .subheading {
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   font-size: 1.5rem;
 }
