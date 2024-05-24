@@ -5,6 +5,7 @@
 - colormetria xd
 - posibilidad de añadir imagenes
 - añadir matrix a los socials
+- añadir scroll-span a las secciones
 
 - TO READ:
   - https://kinsta.com/blog/web-design-best-practices/
