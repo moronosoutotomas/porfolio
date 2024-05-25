@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: TODO.md
+Sitemap: https://tomasmorono.dev/sitemap.xml

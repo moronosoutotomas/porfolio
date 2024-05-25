@@ -6,6 +6,7 @@
 - posibilidad de añadir imagenes
 - añadir scroll-span a las secciones para todos los viewmodel
 - probar a usar foto en lugar del retrato de gabi como imagen principal
+- agregar un archivo robots.txt y un mapa del sitio XML para ayudar a los motores de búsqueda a indexar tu sitio web más eficientemente
 
 - TO READ:
   - https://kinsta.com/blog/web-design-best-practices/
