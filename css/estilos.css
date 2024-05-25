@@ -1,5 +1,18 @@
 body {
-  color: #32344f !important;
+  color: #32344f;
+}
+
+.sombra {
+  text-shadow: 1px 1px 5px #464646a4;
+}
+
+.morono {
+  color: #5b5d72;
+}
+
+.skills-style {
+  color: #0084b9;
+  filter: drop-shadow(7px 7px 15px #32344f58);
 }
 
 /* body {
