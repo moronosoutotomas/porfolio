@@ -4,7 +4,7 @@
 - selector de idioma para ingles galego (default) y castellano
 - colormetria xd
 - posibilidad de añadir imagenes
-- añadir scroll-span a las secciones
+- añadir scroll-span a las secciones para todos los viewmodel
 - probar a usar foto en lugar del retrato de gabi como imagen principal
 
 - TO READ:
