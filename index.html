@@ -8,6 +8,8 @@
 
   <meta name="description"
     content="Un porfolio personal para clase y el entorno laboral, con mi experiencia, mis estudios mas relevantes, mis skills, mis intereses y mis logros" />
+  <meta name="keywords"
+    content="Tomás, Moroño, Porfolio, sobre mi, experiencia, educación, skills, intereses, premios, contacto">
   <meta name="author" content="Tomás Moroño Souto" />
 
   <meta property="og:description"
@@ -31,7 +33,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 
   <!-- Bootstrap -->
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/modals/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link href="css/styles.css" rel="stylesheet" />
 
@@ -40,10 +41,20 @@
 
 </head>
 
+<!-- La basura de Mr.Google -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTVKJSDYLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTVKJSDYLH');
+</script>
+
 <body id="page-top">
 
   <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-roledescription="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="navigation">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Tomás Moroño</span>
       <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
@@ -70,22 +81,21 @@
   <div class="container-fluid p-0">
 
     <!-- Sobre mi -->
-    <section class="resume-section" id="about" aria-roledescription="About me section">
+    <section class="resume-section" id="about" aria-label="About me section">
       <div class="resume-section-content">
         <h1 class="mb-0"><span class="sombra">Tomás</span><span class="morono"> Moroño</span></h1>
-        <div class="subheading mb-5">Tui, Pontevedra · <a class=""
-            href="mailto:moronosoutotomas.sangrina@gmail.com">moronosoutotomas.sangrina@gmail.com</a>
+        <div class="subheading mb-5">Tui, Pontevedra · Desarrollador de Multiplataforma
         </div>
 
         <p class="lead mb-5">Considero que se me da bien integrarme en un equipo y adaptarme,
           mostrando buena perspectiva del proyecto y destrezas comunicativas para llevarlo a cabo.</p>
 
         <div class="social-icons">
-          <a class="social-icon" target="_blank" aria-details="Link to LinkedIn"
+          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my LinkedIn profile"
             href="https://www.linkedin.com/in/moronosoutotomas/"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" target="_blank" aria-details="Link to GitHub"
+          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my GitHub profile"
             href="https://github.com/moronosoutotomas"><i class="fab fa-github"></i></a>
-          <a class="social-icon" target="_blank" aria-details="Link to Mastodon"
+          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my Mastodon profile"
             href="https://paquita.masto.host/@th0maswaschosen"><i class="fab fa-mastodon"></i></a>
 
         </div>
@@ -94,7 +104,7 @@
     <hr class="m-0" />
 
     <!-- Experiencia -->
-    <section class="resume-section" id="experience" aria-roledescription="Experience section">
+    <section class="resume-section" id="experience" aria-label="Experience section">
       <div class="resume-section-content">
         <h2 class="mb-5">Experiencia</h2>
 
@@ -114,7 +124,7 @@
     <hr class="m-0" />
 
     <!-- Educación -->
-    <section class="resume-section" id="education" aria-roledescription="Education section">
+    <section class="resume-section" id="education" aria-label="Education section">
       <div class="resume-section-content">
         <h2 class="mb-5">Educación</h2>
 
@@ -141,7 +151,7 @@
     <hr class="m-0" />
 
     <!-- Skills -->
-    <section class="resume-section" id="skills" aria-roledescription="Skills section">
+    <section class="resume-section" id="skills" aria-label="Skills section">
       <div class="resume-section-content">
         <h2 class="mb-5">Skills</h2>
         <div class="subheading mb-3">Lenguajes | Frameworks | Herramientas</div>
@@ -175,7 +185,7 @@
     <hr class="m-0" />
 
     <!-- Intereses -->
-    <section class="resume-section" id="interests" aria-roledescription="Interests section">
+    <section class="resume-section" id="interests" aria-label="Interests section">
       <div class="resume-section-content">
         <h2 class="mb-5">Intereses</h2>
         <p>A parte del desarrollo de software, me gusta pasar tiempo al aire libre. En invierno me gusta practicar
@@ -190,7 +200,7 @@
     <hr class="m-0" />
 
     <!-- Premios -->
-    <section class="resume-section" id="awards" aria-roledescription="Awards section">
+    <section class="resume-section" id="awards" aria-label="Awards section">
       <div class="resume-section-content">
         <h2 class="mb-5">Premios</h2>
         <ul class="fa-ul mb-0">
@@ -204,7 +214,7 @@
     <hr class="m-0" />
 
     <!-- Contáctame -->
-    <section class="resume-section" id="contact" aria-roledescription="Contact form section">
+    <section class="resume-section" id="contact" aria-label="Contact form section">
       <div class="resume-section-content">
 
         <div class="my-5 p-3">

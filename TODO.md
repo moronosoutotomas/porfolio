@@ -1,7 +1,7 @@
 # TODO
-- Second check: https://www.accessibilitychecker.org/audit/?website=https%3A%2F%2Ftomasmorono.dev&flag=us
+- Third check: https://www.accessibilitychecker.org/audit/?website=https%3A%2F%2Ftomasmorono.dev&flag=us
 - seccion de agradecimientos
-- selector de idioma para ingles galego (default) y castellano
+- i18n
 - colormetria xd
 - posibilidad de añadir imagenes
 - añadir scroll-span a las secciones para todos los viewmodel
