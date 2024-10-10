@@ -3,7 +3,7 @@ Disallow: /assets/
 Disallow: /css/
 Disallow: /js/
 Disallow: /CNAME
-Disallow: /README.md
-Disallow: /TODO.md
 Disallow: /LICENSE
+Disallow: /README.md
 Sitemap: https://tomasmorono.dev/sitemap.xml
+Disallow: /TODO.md
