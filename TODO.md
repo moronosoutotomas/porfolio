@@ -1,4 +1,5 @@
-# TODO
+## TODO
+
 - Third check: https://www.accessibilitychecker.org/audit/?website=https%3A%2F%2Ftomasmorono.dev&flag=us
 - probar a usar foto en lugar del retrato de gabi como imagen principal
 
