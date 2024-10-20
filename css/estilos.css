@@ -7,12 +7,13 @@ body {
 }
 
 .morono {
-  color: #5b5d72;
+  color: #0084b9;
+  /* #5b5d72/*;
 }
 
 .skills-style {
-  color: #0084b9;
-  filter: drop-shadow(7px 7px 15px #32344f58);
+  color: #32344f;
+  /* filter: drop-shadow(7px 7px 15px #28293e); la sombrita no me convence*/
 }
 
 /* body {

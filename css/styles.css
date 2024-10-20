@@ -64,7 +64,7 @@
   --bs-body-line-height: 1.25;
   --bs-body-color: #32344f;
 
-  --bs-body-bg: #dbae7f;
+  --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #00d689;
@@ -425,6 +425,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
