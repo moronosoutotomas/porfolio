@@ -4,5 +4,6 @@
 - probar a usar foto en lugar del retrato de gabi como imagen principal
 
 - TO READ:
+
   - https://kinsta.com/blog/tailwind-css/
   - https://www.w3.org/TR/WCAG20/
