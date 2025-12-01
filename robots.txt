@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
 Disallow: /CNAME
 Disallow: /LICENSE
 Disallow: /README.md

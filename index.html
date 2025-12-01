@@ -2,15 +2,28 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- shrink-to-fit=no -->
-  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomás Moroño</title>
 
-  <title>Desarrollador Web - Tomás Moroño</title>
+  <!-- Resources -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      font-family: Instrument Sans, system-ui, sans-serif;
+      font-weight: 500;
+      font-size: large;
+    }
+  </style>
+
   <meta name="description"
-    content="Un porfolio personal para clase y el entorno laboral, con mi experiencia, mis estudios mas relevantes, mis skills, mis intereses y mis logros" />
+    content="A personal porfolio with my experience, studies, recent skills, interests and awardss" />
   <meta name="keywords"
-    content="porfolio tomas moroño, tomás moroño souto, desarrollador web, software developer, premios educación A Guarda, IES Pazo da Mercé As Neves, CPR CEBEM, Imatia, IES A Sangriña">
+    content="porfolio tomás moroño, tomás moroño souto, web developer, premios educación A Guarda 2022-2023, IES Pazo da Mercé, CPR CEBEM">
   <meta name="author" content="tomasmorono.dev" />
   <meta name="owner" content="Tomás Moroño Souto" />
   <link rel="canonical" href="https://tomasmorono.dev/">
@@ -27,301 +40,129 @@
   <meta name="theme-color" content="#ffffff">
 
   <meta property="og:description"
-    content="Un porfolio personal para clase y el entorno laboral, con mi experiencia, mis estudios mas relevantes, mis skills, mis intereses y mis logros" />
+    content="A personal porfolio with my experience, studies, recent skills, interests and awards" />
   <meta property="og:image" content="https://tomasmorono.dev/assets/img/profile3.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_ES" />
 
-  <!-- Font Awesome icons -->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-  <link href="css/styles.css" rel="stylesheet" />
-
-  <!-- Estilo personalizados -->
-  <link href="css/estilos.css" rel="stylesheet" />
-
-  <!-- Verificación Mastodon -->
+  <!-- Mastodon Verification -->
   <link rel="me" href="https://neopaquita.es/@th0maswaschosen">
-
 </head>
 
-<body id="page-top">
+<body class="flex flex-col items-center lg:pt-18 bg-gray-800 text-white">
+  <header class="w-full lg:w-1/3 p-4">
+    <h1 class="text-3xl">Hi, my name is <span class="font-semibold">Tomás Moroño</span> and I love web
+      development.</h1>
 
-  <!-- Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav" aria-label="navigation">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Tomás Moroño</span>
-      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-          src="assets/img/profile2.jpg"
-          alt="Una caricatura digital hecha y firmada por Gabi Moon, donde sale el autor del porfolio (Tomás Moroño), de medio perfil, a modo retrato" /></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre mi</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Premios</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contáctame</a></li>
-      </ul>
+    <div class="pt-4">
+      <a class="text-sm m-1 p-1 hover:text-blue-700 border-b border-blue-600" href="https://github.com/moronosoutotomas"
+        target="_blank">
+        github
+      </a>
+      <a class="text-sm m-1 p-1 hover:text-blue-700  border-b border-blue-600"
+        href="https://www.linkedin.com/in/moronosoutotomas/" target="_blank">
+        linkedin
+      </a>
     </div>
-  </nav>
+  </header>
 
-  <!-- Contenido de la página -->
-  <div class="container-fluid p-0">
+  <main class="w-full lg:w-1/3 p-4 flex flex-col gap-12">
+    <!-- experience -->
+    <section class="flex flex-col gap-4">
+      <h3 class="text-xl">Experience</h3>
 
-    <!-- Sobre mi -->
-    <section class="resume-section" id="about" aria-label="sección sobre mi">
-      <div class="resume-section-content">
-        <h1 class="mb-0">
-          <span class="sombra">
-            Tomás</span>
-          <span class="morono sombra"> Moroño</span>
-        </h1>
-        <div class="subheading mb-5">
-          Tui, Pontevedra · Desarrollador Web (in progress)
-        </div>
+      <div>
+        <strong>Siweb (sept 2025 - nov 2025)</strong>
+        <p>Training (FCT, as Web Developer) developing multiple web applications using Nuxt.</p>
+      </div>
 
-        <p class="lead mb-4">
-          Bienvenide a mi porfolio! Siéntete libre de indagar cuanto quieras y contactarme.
-        </p>
-
-        <p class="lead mb-5">
-          Enamorado de mi trabajo, siempre con ganas de integrarme en un equipo y adaptarme, mostrando buena perspectiva
-          del proyecto y destrezas
-          comunicativas para llevarlo a cabo además de iniciativa para perseguir objetivos.
-        </p>
-
-        <div class="social-icons">
-          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my LinkedIn profile"
-            href="https://www.linkedin.com/in/moronosoutotomas/"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my GitHub profile"
-            href="https://github.com/moronosoutotomas"><i class="fab fa-github"></i></a>
-          <a class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Link to my Mastodon profile"
-            href="https://neopaquita.es/@th0maswaschosen"><i class="fab fa-mastodon"></i></a>
-        </div>
+      <div>
+        <strong>Imatia Innovations (mar 2023 - jun 2023)</strong>
+        <p>Training (FCT, as Systems Admin) looking after multiple tasks as part of Systems department, taking care of
+          hardware and setting up laptops and automating installations via Powershell scripts.</p>
       </div>
     </section>
 
-    <!-- Experiencia -->
-    <section class="resume-section" id="experience" aria-label="sección experiencia">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Experiencia</h2>
+    <!-- education -->
+    <section class="flex flex-col gap-4">
+      <h3 class="text-xl">Education</h3>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Desarrollador web</h3>
-            <div class="subheading mb-3">Siweb</div>
-            <p>
-              Formación en Centro de Trabajo, desarrollando una aplicación web de gestión de clubs de futbol y
-              actualmente una que gestiona soluciones de envío masivo de SMS.
-            </p>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-primary">Septiembre 2025 - Actualidad</span>
-          </div>
-        </div>
+      <div>
+        <strong>IES Pazo da Mercé (sept 2025 - currently)</strong>
+        <p>High-Level Technical Degree in Web Development (2nd year).</p>
+      </div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Administrador de Sistemas</h3>
-            <div class="subheading mb-3">Imatia</div>
-            <p>
-              Formación en Centro de Trabajo, llevando diversas tareas como revisión y puesta a punto de equipos;
-              resolución de problemas, tanto in situ como vía remoto, gestionando el uso de permisos e
-              inventariado de material. Preparación de imágenes, programación de scripts y recuperación de equipos.
-            </p>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-primary">Marzo 2023 - Junio 2023</span>
-          </div>
-        </div>
+      <div>
+        <strong>CPR CEBEM (sept 2023 - jun 2024)</strong>
+        <p>High-Level Technical Degree in Multiplatform Development (1st year).</p>
+      </div>
 
+      <div>
+        <strong>IES Pazo da Mercé (sept 2021 - jun 2023)</strong>
+        <p>Mid-Level Technical Degree in Microcomputer Systems and Networks.</p>
       </div>
     </section>
 
-    <!-- Educación -->
-    <section class="resume-section" id="education" aria-label="seccion educacion">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Educación</h2>
+    <!-- skills -->
+    <section class="flex flex-col gap-4">
+      <h3 class="text-xl">Skills</h3>
+      <p>For the technologies listed above I have at least 2 months of <strong>real experience</strong> using them.</p>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-3">IES Pazo da Mercé</h3>
-            <div class="subheading mb-3">
-              Grado Superior en Desarrollo de Aplicaciones Web (2º curso)
-            </div>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-primary">Septiembre 2024 - Actualidad</span>
-          </div>
-        </div>
+      <div class="rounded-lg bg-gray-400 p-4 text-gray-800">
+        <strong>Front end</strong>
+        <p class="py-2 text-xs text-gray-800">HTML, CSS, JavaScript, TypeScript, Bootstrap, Tailwind, React, Vue and
+          Nuxt</p>
+        <img src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap,tailwind,react,vue,nuxt">
+      </div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-3">CPR CEBEM</h3>
-            <div class="subheading mb-3">
-              Grado Superior en Desarrollo de Aplicaciones Multiplataforma (1º curso)
-            </div>
-          </div>
-          <div class="flex-shrink-0">
-            <span class="text-primary">Septiembre 2023 - Junio 2024</span>
-          </div>
-        </div>
+      <div class="rounded-lg bg-gray-400 p-4 text-gray-800">
+        <strong>Back end</strong>
+        <p class="py-2 text-xs text-gray-800">PHP, Laravel, Java, NodeJS, MySQL, Postgres, Nginx and Apache</p>
+        <img src="https://skillicons.dev/icons?i=php,laravel,java,nodejs,mysql,postgres,nginx,apache">
+      </div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-3">IES A Sangriña</h3>
-            <div class="subheading mb-3">Grado Medio en Sistemas Microinformáticos y Redes</div>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">Septiembre 2021 - Junio 2023</span></div>
-        </div>
+      <div class="rounded-lg bg-gray-400 p-4 text-gray-800">
+        <strong>Tooling</strong>
+        <p class="py-2 text-xs text-gray-800">Github, Bash, GNU Linux, Postman, Git, Docker and Make</p>
+        <img src="https://skillicons.dev/icons?i=github,bash,linux,postman,git,docker,cmake">
+      </div>
 
+      <div class="rounded-lg bg-gray-400 p-4 text-gray-800">
+        <strong>Testing</strong>
+        <p class="py-2 text-xs text-gray-800">Github Actions and Vitest</p>
+        <img src="https://skillicons.dev/icons?i=vitest,githubactions">
       </div>
     </section>
 
-    <!-- Skills -->
-    <section class="resume-section" id="skills" aria-label="sección skills">
-      <div class="resume-section-content">
+    <!-- interests -->
+    <section class="flex flex-col gap-4">
+      <h3 class="text-xl">Interests</h3>
 
-        <h2 class="mb-5">Skills</h2>
-        <div class="subheading mb-3">Front end</div>
-        <ul class="list-inline dev-icons">
-          <img src="https://skillicons.dev/icons?i=html,css,js,ts,bootstrap,tailwind,vue,nuxt" />
-        </ul>
-
-        <div class="subheading mb-3">Back end</div>
-        <ul class="list-inline dev-icons">
-          <img src="https://skillicons.dev/icons?i=php,laravel,java,nodejs,mysql,postgres,nginx,apache" />
-        </ul>
-
-        <div class="subheading mb-3">Tools</div>
-        <ul class="list-inline dev-icons">
-          <img src="https://skillicons.dev/icons?i=github,bash,linux,docker,npm,yarn,postman,git" />
-        </ul>
-
-        <div class="subheading mb-3">Testing</div>
-        <ul class="list-inline dev-icons">
-          <img src="https://skillicons.dev/icons?i=vitest,githubactions" />
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Buenas prácticas</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Comunicación como mantra</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Trabajo en equipo</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Flexible y adaptativo</li>
-        </ul>
+      <div>
+        <p>Taking walks, biking, snowboarding and spending time with my
+          friends are my favourite activities but there isn't a day where I don't watch an episode of the series I'm
+          currently watching. Moreover, I love to spend time on the outside.</p>
       </div>
     </section>
 
-    <!-- Intereses -->
-    <section class="resume-section" id="interests" aria-label="sección intereses">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Intereses</h2>
-        <p>A parte del desarrollo de software, me gusta pasar tiempo al aire libre. En invierno me gusta practicar
-          snowboard cuando puedo. El resto del año me gusta salir en bici los findes, pasear y ver naturaleza. También
-          me gusta andar en moto y el patinaje en línea.
-        </p>
-        <p class="mb-0">
-          A la hora de pasar tiempo en casa me gusta el cine clásico, de ficción o el anime en general.
-          Disfruto mucho actualizándome en las novedades referentes a la informática y a la tecnología en general y
-          también me gusta estar al tanto de las noticias diarias.
-        </p>
+    <!-- awards -->
+    <section class="flex flex-col gap-4">
+      <h3 class="text-xl">Award(s)</h3>
+
+      <div>
+        <strong>Education Award</strong>
+        <p><a class="underline hover:text-blue-600"
+            href="https://www.aguarda.es/premios-de-educacion-concello-da-guarda-2023/">"Premio
+            Educación ao Esforzo
+            Persoal e a Participación 2022-23"</a></p>
       </div>
     </section>
+  </main>
 
-    <!-- Premios -->
-    <section class="resume-section" id="awards" aria-label="sección premios">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Premios</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-            Premio Educación 2022-23 ao Esforzo Persoal e a Participación (A Guarda).
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contáctame -->
-    <section class="resume-section" id="contact" aria-label="sección de contacto">
-      <div class="resume-section-content">
-
-        <div class="my-5 p-3">
-          <h2 class="my-4">Contáctame</h2>
-          <form class="form-floating" action="https://formspree.io/f/xeqywqln" id="xeqywqln" method="POST">
-            <div class="form-floating mb-3">
-              <input type="email" name="email" class="form-control rounded-3" id="email">
-              <label for="email">Correo electrónico</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control rounded-3" name="message" id="message" rows="7"></textarea>
-              <label for="message">Tu mensaje</label>
-            </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </div>
-
-
-  <!-- <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
-      rel="cc:attributionURL" href="https://tomasmorono.dev">Porfolio</a> by <a rel="cc:attributionURL dct:creator"
-      property="cc:attributionName" href="https://tomasmorono.dev">Tomás
-      Moroño</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
-      target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
-        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
-        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
-        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
-        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-        src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> -->
-
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- JS -->
-  <script src="js/scripts.js"></script>
-
-  <!-- Botón Ko-fi -->
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-  <script>
-    kofiWidgetOverlay.draw('tomasmorono', {
-      'type': 'floating-chat',
-      'floating-chat.donateButton.text': 'Tip Me',
-      'floating-chat.donateButton.background-color': '#32344f',
-      'floating-chat.donateButton.text-color': '#fff'
-    });
-  </script>
-  <!-- La basura de Mr.Google -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTVKJSDYLH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-DTVKJSDYLH');
-  </script>
-
+  <footer class="w-full lg:w-1/3 p-4 tooltip text-center">
+    <small>Made with 💙 by Tomás Moroño</small>
+  </footer>
 </body>
 
 </html>
